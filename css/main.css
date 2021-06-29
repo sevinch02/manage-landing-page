@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+}
+body{
+
+    font-family: 'Be Vietnam', sans-serif;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.row{
+    display: flex;
+   margin: 0 auto;
+  
+
+}
+.navigation{
+    position: fixed;
+    padding: 18px 0;
+    top:0px;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #fff;
+  
+}
+.nav-menu-link{
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #242D52;
+    padding: 0 20px;
+    
+}
+.nav-menu{
+    display: flex;
+    justify-content: space-around;
+   
+
+}
+.nav-button{
+    padding: 8px;
+    width: 137px;
+    height: 44px;
+    border:none;
+    background: #F3603C;
+    color: #FFF;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;  
+    border-radius: 22px;
+}
+/*================================================================
+                  intro
+====================================================================*/
+.intro{
+    padding: 90px;
+    
+}
+.row    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.intro-text h1{
+    font-weight: bold;
+    font-size: 56px;
+    line-height: 64px;
+    color: #242D52;
+    
+}
+
+.intro-text p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #242D52;
+}
+.intro-img{
+    background-image:url(../img/Rectangle.png)
+}
+
+/*===========================================================================================
+              What’s different about Manage?
+=============================================================================================*/
+
+.about{
+    padding: 50px ;
+}
+.about-intro{
+   margin-top: -345px;
+   margin-left: 0px;
+}
+.about-intro h2{
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    color: #242D52;
+}
+.about-intro p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    color: #242D52;
+}
+.features-item-head{
+    display: flex;
+    flex-direction: row;
+}
+.features-item-head h4 {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 23px;
+    color: #242D52;
+    margin-top: 0px;
+    margin-left: 22px;
+}
+.features-item-text{
+   font-weight: normal;
+   font-size: 16px;
+   line-height: 26px;
+   color: #242D52;
+}
+.number{
+    background: #F3603C;
+    border-radius: 39px;
+    padding: 7px 20px;
+    width: 60px;
+    color: #fff;
+    margin-left: -74px;
+ 
+}
