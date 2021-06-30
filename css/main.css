@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
+@import url(../style.css);
 
 
 
@@ -8,14 +9,15 @@
 body{
 
     font-family: 'Be Vietnam', sans-serif;
+    margin: 0 auto;
 }
 .container{
-    max-width: 1200px;
+    max-width: 1440px;
     margin: 0 auto;
 }
 .row{
     display: flex;
-   margin: 0 auto;
+    margin: 0 auto;
   
 
 }
@@ -26,6 +28,7 @@ body{
     justify-content: space-between;
     width: 100%;
     background-color: #fff;
+    z-index: 10;
   
 }
 .nav-menu-link{
@@ -37,11 +40,12 @@ body{
     padding: 0 20px;
     
 }
+.nav-menu-link:hover{
+    opacity: 50%;
+}
 .nav-menu{
     display: flex;
     justify-content: space-around;
-   
-
 }
 .nav-button{
     padding: 8px;
@@ -52,6 +56,10 @@ body{
     color: #FFF;
     box-shadow: 0px 15px 15px -10px #FF9F8E;  
     border-radius: 22px;
+    cursor: pointer;
+}
+.nav-button:hover{
+    opacity: 30%;
 }
 /*================================================================
                   intro
@@ -62,7 +70,7 @@ body{
 }
 .row    {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 }
 .intro-text h1{
@@ -132,5 +140,164 @@ body{
     width: 60px;
     color: #fff;
     margin-left: -74px;
- 
+}
+/*==========================================================
+              What they've said
+============================================================*/
+
+.what{
+    padding: 50px;
+}
+.what h2{
+    text-align: center;
+    margin-bottom: 64px;
+}
+.column{
+    position: relative;
+    width: 544px;
+    height: 220px;
+    background-color: #FAFAFA;
+    margin-left: 20px;
+    
+}
+.column-text{
+    width: 460px;
+    height: 120px;
+    padding: 60px 40px 40px 40px;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #242D52;
+
+   mix-blend-mode: normal;
+   opacity: 0.5;
+}
+.colum-text ,h3{
+    text-align: center;
+    margin-top: 0px;
+}
+.what-img{
+    position: absolute;
+    bottom: 175px;
+    left:192px;
+}
+.btn{
+    margin: 6% 46%;
+    
+   
+}
+
+/*==============================================================
+   get started
+
+===============================================================*/
+.get-started{
+    padding: 50px;
+    background: #F3603C;
+   
+}
+.get-started h2{
+    width: 455px;
+    height: 96px;
+    font-weight: bold;
+    font-size: 40px;
+    line-height: 44px;
+    color: #fff;
+
+}
+.get-btn{
+    background-color: #fff;
+    color: #F3603C;
+    padding: 8px;
+    width: 137px;
+    height: 44px;
+    border:none;
+    box-shadow: 0px 15px 15px -10px #FF9F8E;  
+    border-radius: 22px;
+    cursor: pointer;
+   
+}
+.get-btn:hover{
+    opacity: 90% ;
+}
+/*===========================================================
+         footer
+
+=============================================================*/
+footer{
+    padding: 50px;
+    background-color: #1D1E25;
+    padding: 62px 165px 61px 171px;
+}
+
+.foot-row{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.footer-link{
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 22px;
+    color: #FFFFFF;
+   
+}
+.foot-link1{
+    list-style-type: none;
+    line-height: 22px;
+    cursor: pointer;
+  
+}
+.foot-link1:hover{
+    color: #F3603C;
+}
+.foot-link{
+    font-size: 15px;
+    line-height: 40px;
+    list-style-type: none; 
+    cursor: pointer;
+}
+.foot-link:hover{
+    color: #F3603C;
+  
+}
+
+.second-foot-link{
+    color: #FFFFFF;
+}
+
+.input{
+    background-color: #fff;
+    border-radius: 22px;
+    width: 200px;
+    height: 44px;
+    border: none;
+    padding: 8px 10px;
+}
+.submit-mail{
+    background: #F3603C;
+    border-radius: 22px;
+    width: 64px;
+    height: 44px;
+    border: none;
+    color:#fff;
+    cursor: pointer;
+}
+.submit-mail:hover{
+     opacity: 50%;  
+}
+.first-foot{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+.footer-socials{ 
+    margin-top: 110px;
+    text-decoration: none;
+}
+.copyright{
+    margin-top:60px ;
+    margin-left: 44px;
 }
