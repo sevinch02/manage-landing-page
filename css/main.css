@@ -6,46 +6,28 @@
 *{
     box-sizing: border-box;
 }
+
+:root{
+    font-size: 14px;
+}
 body{
 
     font-family: 'Be Vietnam', sans-serif;
-    margin: 0 auto;
+    margin: 0 ;
+
 }
+/*====================================
+       for all 
+====================================*/
 .container{
-    max-width: 1440px;
+    max-width: 1110px;
     margin: 0 auto;
 }
 .row{
     display: flex;
-    margin: 0 auto;
-  
-
 }
-.navigation{
-    position: fixed;
-    padding: 18px 0;
-    top:0px;
-    justify-content: space-between;
-    width: 100%;
-    background-color: #fff;
-    z-index: 10;
-  
-}
-.nav-menu-link{
+a{
     text-decoration: none;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 19px;
-    color: #242D52;
-    padding: 0 20px;
-    
-}
-.nav-menu-link:hover{
-    opacity: 50%;
-}
-.nav-menu{
-    display: flex;
-    justify-content: space-around;
 }
 .nav-button{
     padding: 8px;
@@ -61,150 +43,234 @@ body{
 .nav-button:hover{
     opacity: 30%;
 }
+/*=======================================
+    navigation
+=========================================*/
+.navigation{
+    padding: 18px 0;  
+}
+.navigation .row{
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-menu-link{
+    position: relative;
+    display: inline-block;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 19px;
+    color: #242D52;
+    padding: 0 20px;
+    
+}
+.nav-menu-link:hover{
+    opacity: 50%;
+}
+.nav-menu-link:after{
+    content: '';
+    position: absolute;
+    bottom: -26px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+    transform: scaleX(0);
+    transition: transform 300ms ease-in-out;
+
+}
+
+.nav-menu-link:hover:after {
+    transform: scaleX(1);
+}
 /*================================================================
                   intro
 ====================================================================*/
-.intro{
-    padding: 90px;
+
+.intro .row    {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
-.row    {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.intro::before{
+    content: '';
+    position: absolute;
+    right: 0;
+    top: -65px;
+    width: 820px;
+    height: 886px;
+    background-image: url('../img/intro-bg.png');
+    background-repeat: no-repeat;
+    background-position: right;
+}
+.column1{
+    width: 50%;
+}
+.intro-img{
+    width: 50%;
+    background-repeat: no-repeat;
+}
+.intro-img img{
+    width: 100%;
+    margin: 0 auto;
+
+}
+.menu-toggle {
+    display: none;
 }
 .intro-text h1{
+    width: -1px;
+    margin-top: 0px;
     font-weight: bold;
-    font-size: 56px;
-    line-height: 64px;
-    color: #242D52;
-    
+    font-size: 4rem;
+    line-height: 4.5rem;
+    color: #242D52; 
 }
 
-.intro-text p{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+.intro-text-p{
+    width: 341px;
+    font-size: 1.28rem;
+    line-height: 2rem;
     color: #242D52;
+
 }
 .intro-img{
     background-image:url(../img/Rectangle.png)
 }
+
 
 /*===========================================================================================
               What’s different about Manage?
 =============================================================================================*/
 
 .about{
-    padding: 50px ;
+    padding: 50px 0 ;
 }
 .about-intro{
-   margin-top: -345px;
    margin-left: 0px;
+   width: 50%;
 }
 .about-intro h2{
     font-weight: bold;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 3.8rem;
+    line-height: 3.50rem;
     color: #242D52;
+    margin-top: 0;
 }
 .about-intro p{
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
+    width: 494px;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
     color: #242D52;
+}
+.about-features{
+    width: 50%;
 }
 .features-item-head{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 .features-item-head h4 {
-    font-style: normal;
     font-weight: bold;
-    font-size: 16px;
-    line-height: 23px;
+    font-size: 1.64rem;
+    line-height: 2.6rem;
     color: #242D52;
-    margin-top: 0px;
+    margin: 0px;
     margin-left: 22px;
+    
 }
 .features-item-text{
-   font-weight: normal;
-   font-size: 16px;
-   line-height: 26px;
+   font-size: 1.8rem;
+   line-height: 3.8rem;
    color: #242D52;
+   margin: 0 22px;
 }
 .number{
     background: #F3603C;
     border-radius: 39px;
-    padding: 7px 20px;
-    width: 60px;
+    width: 80px;
     color: #fff;
-    margin-left: -74px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.3rem;
 }
 /*==========================================================
               What they've said
 ============================================================*/
-
+.container-what{
+    max-width: 1110px;
+    margin: 0 auto;
+    overflow-X: hidden;
+    padding-top: 40px;
+}
+.row-what{
+    display: flex;
+    justify-content: center;
+    transform: translateX(25%);
+}
 .what{
-    padding: 50px;
+    padding: 50px 0;
+    
 }
 .what h2{
     text-align: center;
-    margin-bottom: 64px;
+    margin-bottom: 114px;
 }
 .column{
+    min-width: 450px;
+    margin: 0 15px;
     position: relative;
-    width: 544px;
-    height: 220px;
     background-color: #FAFAFA;
-    margin-left: 20px;
-    
+
 }
 .column-text{
-    width: 460px;
-    height: 120px;
-    padding: 60px 40px 40px 40px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
+    line-height: 1.7rem;
     color: #242D52;
-
-   mix-blend-mode: normal;
-   opacity: 0.5;
+    text-align: center;
+    opacity: 0.5;
+    padding: 50px 40px 40px 40px;
 }
 .colum-text ,h3{
     text-align: center;
-    margin-top: 0px;
+    margin: 0px;
 }
-.what-img{
-    position: absolute;
-    bottom: 175px;
-    left:192px;
-}
+.what-img{ 
+  position: absolute;   
+  top:-36px;   
+  left: calc(50% - 36px); 
+  }
 .btn{
-    margin: 6% 46%;
-    
-   
+  text-align: center;
+  margin-top: 38px;
 }
 
 /*==============================================================
    get started
 
 ===============================================================*/
+.container-get{
+    max-width: 1110px;
+    margin: 0 auto;
+}
+.row-get{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 .get-started{
-    padding: 50px;
     background: #F3603C;
-   
+    padding: 65px 163px;
 }
 .get-started h2{
     width: 455px;
     height: 96px;
     font-weight: bold;
-    font-size: 40px;
-    line-height: 44px;
+    font-size: 2.8rem;
+    line-height:3.4rem;
     color: #fff;
-
+    margin: 0;
 }
 .get-btn{
     background-color: #fff;
@@ -226,47 +292,34 @@ body{
 
 =============================================================*/
 footer{
-    padding: 50px;
+    padding: 116px;
     background-color: #1D1E25;
-    padding: 62px 165px 61px 171px;
+    
 }
 
 .foot-row{
     display: flex;
+    position: relative;
     justify-content: space-between;
     
 }
 .footer-link{
+    display: flex;
+    justify-content: space-around;
     font-weight: normal;
-    font-size: 15px;
-    line-height: 22px;
-    color: #FFFFFF;
-   
-}
-.foot-link1{
-    list-style-type: none;
-    line-height: 22px;
-    cursor: pointer;
-  
-}
-.foot-link1:hover{
-    color: #F3603C;
+    font-size: 1.07rem;
+    line-height: 1.05rem;
+    color: #FFFFFF;   
 }
 .foot-link{
-    font-size: 15px;
-    line-height: 40px;
+    font-size:1.07rem ;
+    line-height: 2.8rem;
     list-style-type: none; 
     cursor: pointer;
 }
 .foot-link:hover{
-    color: #F3603C;
-  
+    color: #F3603C; 
 }
-
-.second-foot-link{
-    color: #FFFFFF;
-}
-
 .input{
     background-color: #fff;
     border-radius: 22px;
@@ -287,20 +340,21 @@ footer{
 .submit-mail:hover{
      opacity: 50%;  
 }
+.form{
+
+    width: 327px;
+    height: 44px;
+    margin: 31px 200px 0;
+}
 .first-foot{
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     flex-wrap: wrap;
 
 }
-a{
-    text-decoration: none;
-}
 .footer-socials{ 
     margin-top: 110px;
-   
 }
 .copyright{
-    margin-top:60px ;
-    margin-left: 44px;
+    position: absolute;
 }
