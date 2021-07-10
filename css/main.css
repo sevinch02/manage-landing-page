@@ -1,20 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Be+Vietnam&display=swap');
-@import url(../style.css);
+@import url(../css/fonts.css);
 
 
 
 *{
     box-sizing: border-box;
 }
-
 :root{
     font-size: 14px;
 }
 body{
-
     font-family: 'Be Vietnam', sans-serif;
     margin: 0 ;
-
 }
 /*====================================
        for all 
@@ -170,6 +167,7 @@ a{
     display: flex;
     flex-direction: row;
     align-items: center;
+   
 }
 .features-item-head h4 {
     font-weight: bold;
@@ -291,34 +289,59 @@ a{
          footer
 
 =============================================================*/
-footer{
-    padding: 116px;
-    background-color: #1D1E25;
-    
+.footer {
+    padding: 48px 0;
+    text-align: right;
+    background-color: #222;
 }
 
-.foot-row{
-    display: flex;
-    position: relative;
+.footer .row {
     justify-content: space-between;
-    
+    align-items: center;
 }
-.footer-link{
+
+.footer-links {
     display: flex;
-    justify-content: space-around;
-    font-weight: normal;
-    font-size: 1.07rem;
-    line-height: 1.05rem;
-    color: #FFFFFF;   
+    text-align: left;
 }
-.foot-link{
-    font-size:1.07rem ;
-    line-height: 2.8rem;
-    list-style-type: none; 
-    cursor: pointer;
+
+.social {
+    margin-top: 55px;
+    margin-right: 100px;
 }
-.foot-link:hover{
-    color: #F3603C; 
+
+.social-link {
+    font-size: 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.social-link:not(:last-child) {
+    margin-right: 13px;
+}
+
+.footer-list {
+    width: 160px;
+    margin: 0;
+    margin-left: 30px;
+}
+
+.footer-link {
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    line-height: 1.72rem;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover, .social-link:hover {
+    color: #F3603C;
+}
+
+.copyright {
+    color: #fff;
+    opacity: 0.5;
 }
 .input{
     background-color: #fff;
@@ -339,22 +362,4 @@ footer{
 }
 .submit-mail:hover{
      opacity: 50%;  
-}
-.form{
-
-    width: 327px;
-    height: 44px;
-    margin: 31px 200px 0;
-}
-.first-foot{
-    display: flex;
-    /*flex-direction: column;*/
-    flex-wrap: wrap;
-
-}
-.footer-socials{ 
-    margin-top: 110px;
-}
-.copyright{
-    position: absolute;
 }
