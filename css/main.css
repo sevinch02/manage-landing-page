@@ -363,3 +363,6 @@ a{
 .submit-mail:hover{
      opacity: 50%;  
 }
+.mobile-copyright{
+    display: none;
+}

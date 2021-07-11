@@ -91,7 +91,7 @@
         flex-direction: column-reverse;
     }
     .column1{
-        width: 100%;
+        width: 83%;
     }
     .intro-img {
         width: 76%;
@@ -108,7 +108,7 @@
         flex-direction: column;
     }
     .about-intro{
-        width: 100%;
+        width: 80%;
     }
 
     .about-intro h2 {
@@ -152,6 +152,28 @@
     .footer .row{
         flex-direction: column-reverse;
     }
+    .first-foot{
+        flex-wrap: wrap;
+    }
+   
+    
+    .footer-links div{
+        order: 6;
+        width: 288px;
+        margin: 0 auto;
+        padding: 30px 0;
+    }
+    .footer-list{
+        margin: 0 auto;
+    }
+    .form .copyright{
+        display: none;
+    }
+    .mobile-copyright{
+        display: block;
+        color: #fff;
+        opacity: 0.5px;
+    }
 
  } 
  
@@ -169,39 +191,74 @@
     .about-intro p{
         font-size :1.5rem;
         line-height: 2rem;
-        width: 463px;
+        width: 408px;
         margin: 0 auto 65px;
     }
+    .about-intro {
+        width: 88%;
+    }
+    .about-intro p {
+        font-size: 1.3rem;
+        line-height: 2rem;}
     .about-features{
         margin: 0 50px;
     }
     .number{
         height: 10px;
+         width: 47px;
     }
     .features-item-head h4{
+        font-size: 1rem;
+    }
+    .features-item-text p {
+        line-height: 2rem;
         font-size: 1rem;
     }
     .column{
         margin: 12px 40px;
     }
+    .get-btn {
+        margin-top: 36px;
+        margin-bottom: 20px;
+    }
+    
+    .get-started h2 {
+        width: 301px; 
+        margin: 39px auto 0;
+        line-height: 2.5rem;
+        font-size: 3rem;
+    }
+    
+    .get-started {
+      padding: 0;
+        width: 100%;
+    }       
     .footer-list{
         width: 148px;
+    }
+    .footer-link{
+        font-size: 2rem;
+        line-height: 2.1rem;
     }
 }
 
 
 @media(max-width:488px){
+    .column1 {
+        width: 100%;
+    }
     .column {
         margin: 12px 10px;
     }
      .footer .container {
             padding: 0 20px;
         }
+        .intro img {
+            width: 100%;
+        }
     .intro-text h1 {
         font-size: 1.8rem;
-    
-    }.intro-text {
-        width: 64%;}
+    }
        
  .about-intro p {
     width: 374px;
@@ -212,6 +269,9 @@
  .features-item-head h4 {
  font-size: 1.0rem;
  }
+ .about-features {
+    margin: 0 30px;
+}
  .what .column{
     width: 91px;
  }
@@ -220,7 +280,11 @@
   }
   .form{
     margin: 26px 50px;
-    width: 288px;
-    height: 19px;
+  }
+  .form .copyright{
+      display: none;
+  }
+  .mobile-copyright{
+      display: block;
   }
 }
